@@ -1,0 +1,14 @@
+{
+  "name": "jirea-local-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:prototype": "set ENV_FILE=.env.prototype&& concurrently -n SERVER,CLIENT \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build:iis": "cd client && npm run build",
+    "start:iis-local": "set ENV_FILE=.env.iis&& cd server && npm run start",
+    "start:prototype-server": "set ENV_FILE=.env.prototype&& cd server && npm run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
