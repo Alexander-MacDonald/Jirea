@@ -3,6 +3,7 @@
 !.env.*.example
 *.md
 !README.md
+!TODO.md
 # Logs
 logs
 *.log
